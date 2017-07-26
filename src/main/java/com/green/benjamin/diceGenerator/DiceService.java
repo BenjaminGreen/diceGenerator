@@ -8,22 +8,26 @@ import java.util.Random;
 
 public class DiceService {
 
-    public List<DiceResult> rollDie(final Map<Integer, Integer> diceCountMap) {
-        final List<DiceResult> results = Lists.newArrayList();
+  public List<DiceResult> rollDice(final Map<Integer, Integer> diceCountMap) {
+    final List<DiceResult> results = Lists.newArrayList();
 
-        diceCountMap.entrySet().forEach(entry -> {
-            final DiceResult diceResult = new DiceResult(entry.getKey());
-            for (int count = 0; count < entry.getValue(); count++) {
-                diceResult.addRollResult(rollDice(entry.getKey()));
-            }
-            results.add(diceResult);
+    diceCountMap.entrySet().forEach(entry -> {
+      final DiceResult diceResult = new DiceResult("D" + entry.getKey());
+      for (int count = 0; count < entry.getValue(); count++) {
+        diceResult.addRollResult(rollDie(entry.getKey()));
+      }
+      results.add(diceResult);
 
-        });
-        return results;
-    }
+    });
+    return results;
+  }
 
-    private int rollDice(final int dieSides) {
-        return new Random(dieSides).nextInt();
-    }
+  private int rollDie(final int dieSides) {
+    return new Random(dieSides).nextInt();
+  }
 
+  public DiceResult rollDie(final EnumeratedDie enumeratedDie) {
+    return new DiceResult("customDie")
+        .addRollResult(enumeratedDie.toEnumeratedValue(rollDie(enumeratedDie.getSides())));
+  }
 }
