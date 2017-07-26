@@ -2,6 +2,7 @@ com/green/benjamin/diceGenerator/DiceResult.class
 com/green/benjamin/diceGenerator/EnumeratedDie.class
 com/green/benjamin/exeptions/InvalidRollsException.class
 com/green/benjamin/diceGenerator/DiceService.class
+com/green/benjamin/diceGenerator/DiceGeneratorSpeachletHandler.class
 com/green/benjamin/diceGenerator/DiceGeneratorSpeechlet.class
 com/green/benjamin/exeptions/InvalidDieSidesException.class
 com/green/benjamin/exeptions/OddDieExceptionException.class

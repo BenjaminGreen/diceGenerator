@@ -40,8 +40,8 @@ public class DiceGeneratorSpeechlet implements Speechlet {
   private static final String SLOT_DICE_ROLL = "Roll";
   private final DiceService diceService;
 
-  public DiceGeneratorSpeechlet(final DiceService diceService) {
-    this.diceService = diceService;
+  public DiceGeneratorSpeechlet() {
+    this.diceService = new DiceService();
   }
 
   @Override
