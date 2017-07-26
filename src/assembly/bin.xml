@@ -1,0 +1,24 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>src/bin</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>dice-generator</include>
+            </includes>
+            <lineEnding>unix</lineEnding>
+            <fileMode>0755</fileMode>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>target/${project.artifactId}-${project.version}-uber.jar</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>dice-generator.jar</destName>
+        </file>
+    </files>
+</assembly>

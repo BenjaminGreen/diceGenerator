@@ -1,0 +1,7 @@
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/diceGenerator/DiceService.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/diceGenerator/EnumeratedDie.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/exeptions/InvalidRollsException.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/exeptions/InvalidDieSidesException.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/exeptions/OddDieExceptionException.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/diceGenerator/DiceResult.java
+/Users/bgreen/Documents/Projects/diceGenerator/src/main/java/com/green/benjamin/diceGenerator/DiceGeneratorSpeechlet.java
